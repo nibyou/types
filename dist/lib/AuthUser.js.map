@@ -1,1 +1,1 @@
-{"version":3,"file":"AuthUser.js","sourceRoot":"","sources":["../../lib/AuthUser.ts"],"names":[],"mappings":";;;AAAA,MAAa,QAAQ;CAKpB;AALD,4BAKC"}
+{"version":3,"file":"AuthUser.js","sourceRoot":"","sources":["../../lib/AuthUser.ts"],"names":[],"mappings":";;;AAAA,MAAa,QAAQ;IAOjB,OAAO;QACH,OAAO,IAAI,CAAC,WAAW,CAAC,QAAQ,CAAC,OAAO,CAAC,CAAC;IAC9C,CAAC;CACJ;AAVD,4BAUC"}

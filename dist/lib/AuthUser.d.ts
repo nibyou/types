@@ -3,4 +3,6 @@ export declare class AuthUser {
     email: string;
     preferred_username: string;
     userId: string;
+    realm_roles: string[];
+    isAdmin(): boolean;
 }
