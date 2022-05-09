@@ -4,5 +4,8 @@ export declare class AuthUser {
     preferred_username: string;
     userId: string;
     realm_roles: string[];
-    isAdmin(): boolean;
+    realm_access: {
+        roles: string[];
+    };
+    static isAdmin(user: AuthUser): boolean;
 }

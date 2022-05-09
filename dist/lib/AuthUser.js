@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AuthUser = void 0;
 class AuthUser {
-    isAdmin() {
-        return this.realm_roles.includes('admin');
+    static isAdmin(user) {
+        return user.realm_access.roles.includes('admin');
     }
 }
 exports.AuthUser = AuthUser;
