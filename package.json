@@ -1,6 +1,6 @@
 {
   "name": "@nibyou/types",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Types-Package for NestJS Microservices",
   "main": "dist/index.js",
   "scripts": {

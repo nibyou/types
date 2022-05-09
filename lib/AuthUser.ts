@@ -4,8 +4,9 @@ export class AuthUser {
     preferred_username: string;
     userId: string;
     realm_roles: string[];
+    realm_access: {roles: string[]};
 
-    isAdmin(): boolean {
-        return this.realm_roles.includes('admin');
+    static isAdmin(user: AuthUser): boolean {
+        return user.realm_access.roles.includes('admin');
     }
 }
