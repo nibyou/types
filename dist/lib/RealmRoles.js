@@ -6,5 +6,6 @@ var RealmRoles;
     RealmRoles["ADMIN"] = "realm:admin";
     RealmRoles["USER_PATIENT"] = "realm:user_patient";
     RealmRoles["USER_PRACTITIONER"] = "realm:user_practitioner";
+    RealmRoles["BACKEND_SERVICE"] = "realm:backend_service";
 })(RealmRoles = exports.RealmRoles || (exports.RealmRoles = {}));
 //# sourceMappingURL=RealmRoles.js.map
