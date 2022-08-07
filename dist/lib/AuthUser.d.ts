@@ -8,4 +8,5 @@ export declare class AuthUser {
         roles: string[];
     };
     static isAdmin(user: AuthUser): boolean;
+    static hasRole(user: AuthUser, role: string): boolean;
 }

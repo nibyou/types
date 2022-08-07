@@ -7,6 +7,10 @@ export class AuthUser {
     realm_access: {roles: string[]};
 
     static isAdmin(user: AuthUser): boolean {
-        return user.realm_access.roles.includes('admin');
+        return AuthUser.hasRole(user, 'admin');
+    }
+
+    static hasRole(user: AuthUser, role: string): boolean {
+        return user.realm_access.roles.includes(role);
     }
 }

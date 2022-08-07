@@ -1,6 +1,6 @@
 {
   "name": "@nibyou/types",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Types-Package for NestJS Microservices",
   "main": "dist/index.js",
   "scripts": {
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@nestjs/swagger": "^5.2.1",
-    "@types/node": "^17.0.31"
+    "@types/node": "^17.0.31",
+    "nest-keycloak-connect": "^1.9.0"
   }
 }
