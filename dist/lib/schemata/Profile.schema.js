@@ -12,8 +12,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProfileSchema = exports.Profile = exports.PersonalData = void 0;
 const swagger_1 = require("@nestjs/swagger");
 const mongoose_1 = require("@nestjs/mongoose");
+const mongoose_2 = require("mongoose");
 const GlobalStatus_1 = require("../GlobalStatus");
 const Address_1 = require("../Address");
+const User_schema_1 = require("./User.schema");
 class PersonalData {
 }
 __decorate([
@@ -89,6 +91,11 @@ __decorate([
     (0, swagger_1.ApiProperty)(),
     __metadata("design:type", String)
 ], Profile.prototype, "profileImage", void 0);
+__decorate([
+    (0, mongoose_1.Prop)({ type: { type: mongoose_2.default.Schema.Types.ObjectId, ref: 'Practitioner' } }),
+    (0, swagger_1.ApiProperty)(),
+    __metadata("design:type", User_schema_1.User)
+], Profile.prototype, "user", void 0);
 __decorate([
     (0, swagger_1.ApiProperty)({
         type: String,

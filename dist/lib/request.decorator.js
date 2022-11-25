@@ -8,11 +8,12 @@ function generateStandardDecorators(summary, roles) {
     const decorators = [
         (0, swagger_1.ApiOperation)({ summary }),
         (0, swagger_1.ApiBadRequestResponse)({ description: 'Bad Request.' }),
+        (0, swagger_1.ApiInternalServerErrorResponse)({ description: 'Internal Server Error.' }),
     ];
     if (roles) {
         decorators.push((0, swagger_1.ApiForbiddenResponse)({ description: 'Forbidden.' }));
         decorators.push((0, swagger_1.ApiUnauthorizedResponse)({ description: 'Unauthorized.' }));
-        decorators.push((0, nest_keycloak_connect_1.Roles)({ roles: roles }));
+        decorators.push((0, nest_keycloak_connect_1.Roles)({ roles }));
     }
     else {
         decorators.push((0, nest_keycloak_connect_1.Public)());

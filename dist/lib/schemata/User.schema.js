@@ -14,6 +14,8 @@ const swagger_1 = require("@nestjs/swagger");
 const mongoose_1 = require("@nestjs/mongoose");
 const GlobalStatus_1 = require("../GlobalStatus");
 const mongoose = require("mongoose");
+const Practitioner_schema_1 = require("./Practitioner.schema");
+const Profile_schema_1 = require("./Profile.schema");
 class PrivateKey {
 }
 __decorate([
@@ -90,12 +92,16 @@ __decorate([
 ], User.prototype, "cryptoData", void 0);
 __decorate([
     (0, mongoose_1.Prop)({ type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Profile' }], default: [] }),
-    (0, swagger_1.ApiPropertyOptional)(),
+    (0, swagger_1.ApiPropertyOptional)({
+        type: () => [Profile_schema_1.Profile],
+    }),
     __metadata("design:type", Array)
 ], User.prototype, "profiles", void 0);
 __decorate([
     (0, mongoose_1.Prop)({ type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Practitioner' }], default: [] }),
-    (0, swagger_1.ApiPropertyOptional)(),
+    (0, swagger_1.ApiPropertyOptional)({
+        type: () => [Practitioner_schema_1.Practitioner],
+    }),
     __metadata("design:type", Array)
 ], User.prototype, "practitioners", void 0);
 __decorate([
