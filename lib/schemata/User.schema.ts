@@ -68,11 +68,15 @@ export class User {
   cryptoData: CryptoData;
 
   @Prop({ type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Profile' }], default: [] })
-  @ApiPropertyOptional()
+  @ApiPropertyOptional({
+    type: () => [Profile],
+  })
   profiles?: Profile[];
 
   @Prop({ type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Practitioner' }], default: [] })
-  @ApiPropertyOptional()
+  @ApiPropertyOptional({
+    type: () => [Practitioner],
+  })
   practitioners?: Practitioner[];
 
   @ApiProperty({

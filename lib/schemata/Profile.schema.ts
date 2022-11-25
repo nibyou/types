@@ -1,8 +1,9 @@
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document } from 'mongoose';
+import mongoose, { Document } from 'mongoose';
 import { GlobalStatus } from '../GlobalStatus';
 import { Address } from '../Address';
+import { User } from './User.schema';
 
 export type ProfileDocument = Profile & Document;
 
@@ -65,6 +66,10 @@ export class Profile {
   @Prop()
   @ApiProperty()
   profileImage: string;
+
+  @Prop({ type: { type: mongoose.Schema.Types.ObjectId, ref: 'Practitioner' }})
+  @ApiProperty()
+  user: User;
 
   @ApiProperty({
     type: String,
