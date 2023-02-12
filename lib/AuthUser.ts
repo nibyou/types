@@ -33,7 +33,7 @@ export class AuthUser {
               }
         });
 
-        if (verified.status === 200) return false;
+        if (verified.status !== 200) return false;
 
         return decode(token) as AuthUser;
     }

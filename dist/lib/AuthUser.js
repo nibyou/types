@@ -16,7 +16,7 @@ class AuthUser {
                 Authorization: 'Bearer ' + token
             }
         });
-        if (verified.status === 200)
+        if (verified.status !== 200)
             return false;
         return (0, jwt_decode_1.default)(token);
     }
