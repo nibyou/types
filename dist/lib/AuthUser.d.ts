@@ -1,3 +1,7 @@
+export declare type KeycloakConnection = {
+    baseUrl: string;
+    realm: string;
+};
 export declare class AuthUser {
     sub: string;
     email: string;
@@ -7,6 +11,10 @@ export declare class AuthUser {
     realm_access: {
         roles: string[];
     };
+    name: string;
+    given_name: string;
+    family_name: string;
     static isAdmin(user: AuthUser): boolean;
     static hasRole(user: AuthUser, role: string): boolean;
+    static verifyToken(token: string, keycloakConnection: KeycloakConnection): Promise<AuthUser | false>;
 }
