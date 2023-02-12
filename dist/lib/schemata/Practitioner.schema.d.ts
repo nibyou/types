@@ -35,4 +35,4 @@ export declare class Practitioner {
     createdAt: Date;
     updatedAt: Date;
 }
-export declare const PractitionerSchema: mongoose.Schema<Practitioner, mongoose.Model<Practitioner, any, any, any, any>, {}, {}, {}, {}, "type", Practitioner>;
+export declare const PractitionerSchema: mongoose.Schema<Practitioner, mongoose.Model<Practitioner, any, any, any, any>, {}, {}, {}, {}, mongoose.DefaultSchemaOptions, Practitioner>;

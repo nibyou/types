@@ -39,4 +39,4 @@ export declare class Practice {
     createdAt: Date;
     updatedAt: Date;
 }
-export declare const PracticeSchema: import("mongoose").Schema<Practice, import("mongoose").Model<Practice, any, any, any, any>, {}, {}, {}, {}, "type", Practice>;
+export declare const PracticeSchema: import("mongoose").Schema<Practice, import("mongoose").Model<Practice, any, any, any, any>, {}, {}, {}, {}, import("mongoose").DefaultSchemaOptions, Practice>;

@@ -35,4 +35,4 @@ export declare class OnboardingToken {
     createdAt: Date;
     updatedAt: Date;
 }
-export declare const OnboardingTokenSchema: import("mongoose").Schema<OnboardingToken, import("mongoose").Model<OnboardingToken, any, any, any, any>, {}, {}, {}, {}, "type", OnboardingToken>;
+export declare const OnboardingTokenSchema: import("mongoose").Schema<OnboardingToken, import("mongoose").Model<OnboardingToken, any, any, any, any>, {}, {}, {}, {}, import("mongoose").DefaultSchemaOptions, OnboardingToken>;

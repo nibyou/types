@@ -25,4 +25,4 @@ export declare class Profile {
     createdAt: Date;
     updatedAt: Date;
 }
-export declare const ProfileSchema: mongoose.Schema<Profile, mongoose.Model<Profile, any, any, any, any>, {}, {}, {}, {}, "type", Profile>;
+export declare const ProfileSchema: mongoose.Schema<Profile, mongoose.Model<Profile, any, any, any, any>, {}, {}, {}, {}, mongoose.DefaultSchemaOptions, Profile>;
